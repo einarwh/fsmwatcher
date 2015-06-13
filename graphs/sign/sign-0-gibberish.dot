@@ -1,0 +1,14 @@
+digraph {
+  label="THE MYSTERIOUS SIGN";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+  gibberish [label="Gibberish\nRight-to-left",bgcolor="black",style="filled"];
+  readable [label="Readable\nLeft-to-right"];
+  gibberish -> readable [label="Turn sign\nPUT Left-to-right\n200 OK"];
+  gibberish -> gibberish [label="Turn sign\nPUT Right-to-left\n200 OK"];
+//  gibberish -> gibberish [label="Turn sign\nPUT ???\n400 Bad Request"];
+  readable -> gibberish [label="Turn sign\nPUT Right-to-left\n200 OK"];
+  readable -> readable [label="Turn sign\nPUT Left-to-right\n200 OK"];
+//  readable -> readable [label="Turn sign\nPUT ???\n400 Bad Request"];
+}

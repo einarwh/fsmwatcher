@@ -1,0 +1,9 @@
+digraph {
+  label="THE LAKE";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+  noboat [label="No boat\nSend otter",bgcolor="black",style="filled"];
+  boat [label="Boat\nRow to island"];
+  noboat -> boat [label="Otter fetches boat"];
+}
