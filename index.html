@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Current Resource FSM</title>
+  </head>
+  <body>
+    <img id="fsmimg"/>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+
+      String.prototype.endsWith = function(suffix) {
+        return this.indexOf(suffix, this.length - suffix.length) !== -1;
+      };
+
+      var socket = io();
+      socket.on('fsm image', function(msg){
+        if (msg.endsWith('.png')) {
+          $("#fsmimg").attr('src','http://localhost:3333/fsmimages/' + msg);
+        }
+      });
+
+    </script>
+  </body>
+</html>
