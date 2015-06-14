@@ -1,0 +1,16 @@
+digraph {
+  label="TOWER AUTHORIZATION";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+
+  realm [label="Tower\nRealm"];
+  unauthorized [label="401 Unauthorized"];
+  forbidden [label="403 Forbidden",bgcolor="black",style="filled"];
+  access [label="200 OK"];
+
+  realm -> unauthorized [label="No credentials"];
+  realm -> forbidden [label="Wrong credentials"];
+  realm -> access [label="Right credentials"];
+
+}
