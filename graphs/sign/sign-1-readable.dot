@@ -3,8 +3,10 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+
   gibberish [label="Gibberish\nRight-to-left"];
   readable [label="Readable\nLeft-to-right",bgcolor="black",style="filled"];
+  
   gibberish -> readable [label="Turn sign\nPUT Left-to-right\n200 OK"];
   gibberish -> gibberish [label="Turn sign\nPUT Right-to-left\n200 OK"];
 //  gibberish -> gibberish [label="Turn sign\nPUT ???\n400 Bad Request"];

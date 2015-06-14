@@ -3,9 +3,11 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+
   unknown [label="Unknown",bgcolor="black",style="filled"];
   deadly [label="Deadly"];
   gone [label="Gone"];
+  
   unknown -> deadly [label="Player exits cave"];
   deadly -> deadly [label="GET | POST | PUT grue\n405 Method Not Allowed"]
   deadly -> gone [label="DELETE grue\n204 No Content"];

@@ -3,11 +3,13 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+  
   initial [label="Unavailable"];
   fetching [label="Swimming towards island"];
   returning [label="Towing boat",bgcolor="black",style="filled"];
   back [label="Returned"];
-  initial -> fetching [label="Fetch boat\nPOST lake"];
+  
+  initial -> fetching [label="Fetch boat\nPOST lake\n202 Accepted"];
   fetching -> fetching [label="GET otter\n200 OK"];
   fetching -> returning [label="After 1 min"];
   returning -> returning [label="GET otter\n200 OK"];

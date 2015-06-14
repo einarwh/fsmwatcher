@@ -3,7 +3,9 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+
   noboat [label="No boat\nSend otter"];
   boat [label="Boat\nRow to island",bgcolor="black",style="filled"];
+  
   noboat -> boat [label="Otter fetches boat"];
 }

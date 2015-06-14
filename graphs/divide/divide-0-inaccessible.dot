@@ -3,8 +3,10 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+
   inaccessible [label="Bridge inaccessible",bgcolor="black",style="filled"];
   crossable [label="Bridge accessible\nCross bridge"];
+  
   inaccessible -> crossable [label="Pull lever\nPOST 200 OK"];
   crossable -> inaccessible [label="Pull lever\nPOST 200 OK"];
 }

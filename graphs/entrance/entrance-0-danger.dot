@@ -3,7 +3,9 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+
   danger [label="Danger\nSkeleton approaching",bgcolor="black",style="filled"];
   safe [label="Safe\nSkeleton trapped"];
+  
   danger -> safe [label="Pull lever in another world"];
 }

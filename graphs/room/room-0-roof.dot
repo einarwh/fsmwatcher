@@ -3,7 +3,9 @@ digraph {
   labelloc=t;
   fontsize=24;
   node [shape=box];
+
   roof [label="Hole in the roof",bgcolor="black",style="filled"];
   floor [label="Hole in the floor"];
+  
   roof -> floor [label="Through mirror"];
 }
