@@ -1,0 +1,22 @@
+digraph {
+  label="THE MIRROR ROOM";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+
+  left7 [label="7 mirrors"];
+  left6 [label="6 mirrors"];
+  left5 [label="5 mirrors"];
+  left4 [label="4 mirrors"];
+  left3 [label="3 mirrors"];
+  left2 [label="2 mirrors",bgcolor="black",style="filled"];
+  left1 [label="1 mirror"];
+
+  left7 -> left6 [label="DELETE\n204 No Content"];
+  left6 -> left5 [label="DELETE\n204 No Content"];
+  left5 -> left4 [label="DELETE\n204 No Content"];
+  left4 -> left3 [label="DELETE\n204 No Content"];
+  left3 -> left2 [label="DELETE\n204 No Content"];
+  left2 -> left1 [label="DELETE\n204 No Content"];
+
+}

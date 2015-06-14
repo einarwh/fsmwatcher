@@ -7,6 +7,7 @@ digraph {
   world0 [label="World no 0"];
   world1 [label="World no 1"];
   world2 [label="World no 2",bgcolor="black",style="filled"];
+  world3 [label="World no 3",style="dotted"];
 
   world0 -> world1 [label="Pushcorn\n201 Created\nLocation: new world"];
   world1 -> world0 [label="Popcorn\n302 Moved Temporarily\nLocation: old world"];

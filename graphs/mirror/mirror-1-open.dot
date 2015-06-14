@@ -1,0 +1,9 @@
+digraph {
+  label="THE MAGIC MIRROR";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+  closed [label="Closed"];
+  open [label="Open\nEnter mirror",bgcolor="black",style="filled"];
+  closed -> open [label="Last mirror"];
+}

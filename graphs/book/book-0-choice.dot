@@ -1,0 +1,13 @@
+digraph {
+  label="THE REST BOOK";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+
+  choice [label="Choose book",bgcolor="black",style="filled"];
+  stuck [label="YOU LOSE!\nStuck forever"];
+  free [label="YOU WIN!\nLink home"];
+
+  choice -> stuck [label="Plain JSON whatever"];
+  choice -> free [label="Hypermedia"];
+}
