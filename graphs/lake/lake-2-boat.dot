@@ -4,9 +4,9 @@ digraph {
   fontsize=24;
   node [shape=box];
 
-  noboat [label="No boat\nSend otter",bgcolor="black",style="filled"];
+  noboat [label="No boat\nSend otter"];
   waiting [label="Waiting for boat."];
-  boat [label="Boat\nRow to island"];
+  boat [label="Boat\nRow to island",bgcolor="black",style="filled"];
   
   noboat -> waiting [label="Otter goes to fetch boat"];
   waiting -> boat [label="Otter returns with boat"];

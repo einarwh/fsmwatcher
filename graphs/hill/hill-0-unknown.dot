@@ -1,0 +1,11 @@
+digraph {
+  label="THE GREEN HILL";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+
+  unknown [label="Unknown wizard",bgcolor="black",style="filled"];
+  known [label="The wizard Edsger"];
+  
+  unknown -> known [label="Read sign left-to-right"];
+}

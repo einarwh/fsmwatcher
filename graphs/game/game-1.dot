@@ -1,0 +1,11 @@
+digraph {
+  label="GAME STATE";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+
+  void [label="Void"];
+  world [label="World",bgcolor="black",style="filled"];
+  
+  void -> world [label="Start adventure\nPOST 201 Created"];
+}

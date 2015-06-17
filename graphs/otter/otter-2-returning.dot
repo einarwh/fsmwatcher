@@ -1,5 +1,5 @@
 digraph {
-  label="THE HELPFUL OTTER";
+  label="THE SWIMMING OTTER";
   labelloc=t;
   fontsize=24;
   node [shape=box];

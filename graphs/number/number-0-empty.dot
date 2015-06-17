@@ -1,0 +1,17 @@
+digraph {
+  label="NUMBER";
+  labelloc=t;
+  fontsize=24;
+  node [shape=box];
+
+  empty [label="Empty",bgcolor="black",style="filled"];
+  integer [label="Integer",peripheries=2];
+  dot [label="Dot"];
+  fraction [label="Fraction",peripheries=2];
+
+  empty -> integer [label="Digit > 0"];
+  integer -> integer [label="Digit"];
+  integer -> dot [label="The '.' symbol"];
+  dot -> fraction [label="Digit"];
+  fraction -> fraction [label="Digit"];
+}
